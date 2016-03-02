@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIView+Masonry_EqualSpace.h"
 #import <Masonry.h>
+#import <MMPlaceHolder.h>
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UIView *sv = [[UIView alloc]initWithFrame:self.view.bounds];
+    sv.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:sv];
     
     UIView *sv11 = [UIView new];
@@ -60,6 +62,7 @@
     [sv equalHorizontalSpacingWith:@[sv11,sv12,sv13]];
     [sv equalVerticalSpacingWith:@[sv11,sv21,sv31]];
     
+
 }
 
 - (void)didReceiveMemoryWarning {
